@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clima em Foco – Mudanças climáticas e El Niño</title>
+<meta name="description" content="Plataforma educativa sobre mudanças climáticas, aquecimento global e o fenômeno El Niño, com atividades interativas.">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="topbar" id="topo">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio"><svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="9" fill="#f2a23a"/><path d="M4 40c8-6 14-6 22 0s14 6 22 0 8-3 12-3v16H4z" fill="#8fd3e8"/></svg><span>Clima em Foco</span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="#mudancas">Mudanças climáticas</a>
+      <a href="#elnino">El Niño</a>
+      <a href="#consequencias">Consequências</a>
+      <a href="#ajudar">Como ajudar</a>
+      <a href="#atividades">Atividades</a>
+      <a href="#referencias">Fontes</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" id="inicio">
+  <svg class="hero-waves" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
+    <path class="w1" d="M0 90c120-40 240-40 360 0s240 40 360 0 240-40 360 0 240 40 360 0v110H0z"/>
+    <path class="w2" d="M0 120c120-40 240-40 360 0s240 40 360 0 240-40 360 0 240 40 360 0v80H0z"/>
+  </svg>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Educação ambiental e divulgação científica</p>
+      <h1>O clima do planeta está mudando. Entender como é o primeiro passo.</h1>
+      <p class="lead">Do efeito estufa ao El Niño: descubra o que a ciência já sabe sobre o aquecimento global, como o oceano Pacífico influencia o tempo no Brasil e o que cada pessoa pode fazer.</p>
+      <div class="actions">
+        <a class="btn primary" href="#mudancas">Explorar conteúdos</a>
+        <a class="btn ghost" href="#atividades">Testar meus conhecimentos</a>
+      </div>
+    </div>
+    <figure class="hero-art">
+      <svg viewBox="0 0 400 340" role="img" aria-label="Ilustração: sol sobre o oceano com termômetro e árvores">
+        <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17617f"/><stop offset="1" stop-color="#2f9bb5"/></linearGradient></defs>
+        <rect width="400" height="340" rx="24" fill="url(#sky)"/>
+        <circle class="sun" cx="290" cy="100" r="44" fill="#f2a23a"/>
+        <circle cx="290" cy="100" r="62" fill="#f2a23a" opacity=".18"/>
+        <path d="M0 220c50-24 100-24 150 0s100 24 150 0 70-12 100-6v126H0z" fill="#0f4a66" opacity=".8"/>
+        <path d="M0 255c50-24 100-24 150 0s100 24 150 0 70-12 100-6v91H0z" fill="#8fd3e8" opacity=".55"/>
+        <path d="M0 290c50-20 100-20 150 0s100 20 150 0 70-10 100-5v55H0z" fill="#e9f6f8" opacity=".9"/>
+        <g transform="translate(50 60)"><rect x="0" y="0" width="14" height="110" rx="7" fill="#fff" opacity=".9"/><rect x="4" y="40" width="6" height="66" rx="3" fill="#e0533d"/><circle cx="7" cy="112" r="14" fill="#e0533d"/></g>
+        <g fill="#3fa383"><path d="M110 200l16-40 16 40z"/><path d="M118 215l8-30 8 30z" opacity=".7"/></g>
+      </svg>
+    </figure>
+  </div>
+  <div class="wrap stats" aria-label="Indicadores sobre o clima">
+    <div class="stat"><strong>≈ 1,1 °C</strong><span>de aquecimento global em 2011–2020 em relação a 1850–1900 (IPCC, AR6)</span></div>
+    <div class="stat"><strong>+ 420 ppm</strong><span>de CO₂ na atmosfera, o maior nível em milhões de anos (NOAA)</span></div>
+    <div class="stat"><strong>≈ 20 cm</strong><span>de elevação média do nível do mar entre 1901 e 2018 (IPCC, AR6)</span></div>
+    <div class="stat"><strong>2 a 7 anos</strong><span>é o intervalo típico entre episódios de El Niño (NOAA)</span></div>
+  </div>
+</section>
+
+<!-- ============ MUDANÇAS CLIMÁTICAS ============ -->
+<section class="section" id="mudancas">
+  <div class="wrap">
+    <h2>Mudanças climáticas</h2>
+    <p class="intro">Mudança climática é a alteração de longo prazo nos padrões médios de temperatura, chuva e ventos. A ciência mostra que, desde meados do século XIX, a principal causa dessa alteração são as atividades humanas.</p>
+
+    <div class="compare">
+      <article class="card"><h3>Tempo</h3><p>É o estado da atmosfera em um lugar e momento específicos: se hoje está chovendo, quanto marca o termômetro agora, se amanhã venta. Muda de hora em hora.</p></article>
+      <article class="card"><h3>Clima</h3><p>É o padrão médio do tempo em uma região, observado ao longo de 30 anos ou mais. Descreve, por exemplo, como costuma ser o verão em Brasília, não como será o próximo domingo.</p></article>
+    </div>
+    <p class="note"><strong>Por que a diferença importa:</strong> um dia frio não contradiz o aquecimento global, assim como um dia quente isolado não o comprova. O que a ciência analisa são as tendências de décadas.</p>
+
+    <div class="split">
+      <div>
+        <h3>O que é o aquecimento global?</h3>
+        <p>É o aumento da temperatura média da superfície da Terra. Ele ocorre porque gases como dióxido de carbono (CO₂), metano (CH₄) e óxido nitroso (N₂O) retêm calor na atmosfera, num processo chamado <strong>efeito estufa</strong>. O efeito estufa natural torna o planeta habitável; o problema é o reforço dele causado por emissões humanas.</p>
+        <p>Segundo o IPCC, as atividades humanas aqueceram o planeta cerca de 1,1 °C, e mais de 90% do excesso de calor retido ficou armazenado nos oceanos.</p>
+      </div>
+      <figure class="diagram">
+        <svg viewBox="0 0 320 240" role="img" aria-label="Diagrama do efeito estufa">
+          <rect width="320" height="240" rx="16" fill="#eaf4f6"/>
+          <rect y="190" width="320" height="50" fill="#3fa383"/>
+          <circle cx="260" cy="38" r="22" fill="#f2a23a"/>
+          <path d="M240 60 L200 180" stroke="#f2a23a" stroke-width="3" stroke-dasharray="6 5"/>
+          <path d="M200 180 L150 100" stroke="#e0533d" stroke-width="3" stroke-dasharray="6 5"/>
+          <path d="M150 100 L110 170" stroke="#e0533d" stroke-width="3" stroke-dasharray="6 5"/>
+          <path d="M200 180 L270 120" stroke="#e0533d" stroke-width="2" opacity=".4" stroke-dasharray="4 5"/>
+          <rect x="20" y="78" width="280" height="30" rx="15" fill="#0b3a53" opacity=".12"/>
+          <text x="160" y="98" text-anchor="middle" font-size="13" fill="#0b3a53">Gases de efeito estufa</text>
+          <text x="20" y="40" font-size="12" fill="#0b3a53">Luz solar chega</text>
+          <text x="20" y="215" font-size="12" fill="#fff">Superfície absorve e emite calor</text>
+        </svg>
+        <figcaption>A radiação solar aquece a superfície; parte do calor emitido é retida pelos gases e devolvida à Terra.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Principais causas e a influência humana</h3>
+    <div class="grid">
+      <article class="card"><h4>Combustíveis fósseis</h4><p>Queimar carvão, petróleo e gás para energia, indústria e transporte é a maior fonte global de CO₂.</p></article>
+      <article class="card"><h4>Desmatamento e queimadas</h4><p>Florestas armazenam carbono. Ao serem derrubadas ou queimadas, liberam esse carbono. No Brasil, o uso da terra pesa muito nas emissões.</p></article>
+      <article class="card"><h4>Agropecuária</h4><p>A criação de gado e o uso de fertilizantes emitem metano e óxido nitroso, gases muito eficientes em reter calor.</p></article>
+      <article class="card"><h4>Resíduos e indústria</h4><p>Aterros e lixões geram metano; processos industriais, como a produção de cimento, emitem CO₂.</p></article>
+    </div>
+
+    <h3>Impactos em diferentes áreas</h3>
+    <div class="grid">
+      <article class="card accent-g"><h4>Biodiversidade</h4><p>Espécies precisam migrar ou se adaptar; recifes de coral sofrem branqueamento com o calor dos oceanos.</p></article>
+      <article class="card accent-b"><h4>Agricultura</h4><p>Mudam as épocas de plantio e aumenta o risco de perdas por seca, calor extremo e excesso de chuva.</p></article>
+      <article class="card accent-a"><h4>Economia</h4><p>Eventos extremos geram prejuízos em infraestrutura, seguros, energia e cadeias de abastecimento.</p></article>
+      <article class="card accent-r"><h4>Sociedade</h4><p>Afeta saúde, moradia e acesso à água. Comunidades mais pobres e vulneráveis tendem a sofrer mais.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EL NIÑO ============ -->
+<section class="section alt" id="elnino">
+  <div class="wrap">
+    <h2>O fenômeno El Niño</h2>
+    <p class="intro">El Niño é a fase quente do <strong>ENOS</strong> (El Niño–Oscilação Sul), uma variação natural do sistema oceano-atmosfera no oceano Pacífico equatorial. Ele é diferente das mudanças climáticas de longo prazo, mas acontece em um planeta que está aquecendo.</p>
+
+    <div class="split">
+      <div>
+        <h3>Como ele acontece</h3>
+        <p>Em condições normais, os ventos alísios sopram de leste para oeste sobre o Pacífico e empurram a água quente da superfície para perto da Indonésia e da Austrália. Na costa da América do Sul, águas profundas e frias sobem à superfície.</p>
+        <p>No El Niño, esses ventos enfraquecem e a água quente se desloca para o centro e o leste do Pacífico. Esse aquecimento anormal da superfície do mar altera onde as nuvens de chuva se formam e muda a circulação da atmosfera em várias partes do mundo. Os episódios costumam durar de 9 a 12 meses.</p>
+      </div>
+      <div class="diagram" id="enso">
+        <div class="tabs" role="tablist" aria-label="Fases do ENOS">
+          <button role="tab" aria-selected="false" data-state="neutro">Neutro</button>
+          <button role="tab" aria-selected="true" data-state="elnino">El Niño</button>
+          <button role="tab" aria-selected="false" data-state="lanina">La Niña</button>
+        </div>
+        <svg viewBox="0 0 400 190" class="enso-svg" data-state="elnino" role="img" aria-label="Corte do oceano Pacífico mostrando a posição da água quente">
+          <defs><radialGradient id="warm"><stop offset="0" stop-color="#e0533d"/><stop offset="1" stop-color="#f2a23a" stop-opacity="0"/></radialGradient></defs>
+          <rect y="70" width="400" height="120" fill="#0f4a66"/>
+          <rect y="70" width="400" height="22" fill="#2f9bb5"/>
+          <path d="M310 190 C320 140 360 110 400 100 L400 190Z" fill="#0b3a53" opacity=".5"/>
+          <ellipse class="warm" cx="110" cy="80" rx="95" ry="26" fill="url(#warm)"/>
+          <g class="winds" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M330 40h-110"/><path d="M220 40l12-8M220 40l12 8"/><path d="M300 58h-80" opacity=".7"/></g>
+          <text x="10" y="170" font-size="12" fill="#fff">Ásia / Austrália</text>
+          <text x="290" y="170" font-size="12" fill="#fff">América do Sul</text>
+          <text x="10" y="20" font-size="12" fill="#0b3a53">Ventos alísios</text>
+        </svg>
+        <p class="enso-text" id="ensoText" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <h3>El Niño, La Niña e condições neutras</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Fase</th><th>Ventos alísios</th><th>Água do Pacífico central/leste</th><th>Tendência no Brasil</th></tr></thead>
+        <tbody>
+          <tr><td data-l="Fase">Neutra</td><td data-l="Ventos">Normais</td><td data-l="Água">Próxima da média</td><td data-l="Brasil">Sem sinal dominante</td></tr>
+          <tr><td data-l="Fase">El Niño</td><td data-l="Ventos">Enfraquecidos</td><td data-l="Água">Mais quente que a média</td><td data-l="Brasil">Seca no Norte/Nordeste; chuva no Sul</td></tr>
+          <tr><td data-l="Fase">La Niña</td><td data-l="Ventos">Intensificados</td><td data-l="Água">Mais fria que a média</td><td data-l="Brasil">Mais chuva no Norte/Nordeste; estiagem no Sul</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Como ele influencia o clima no mundo</h3>
+    <p>Ao deslocar as áreas de chuva tropical, o El Niño costuma trazer secas à Indonésia, Austrália e sul da África, e chuvas acima da média ao sul dos Estados Unidos e ao oeste da América do Sul. Também tende a elevar a temperatura média global: os anos de El Niño forte costumam figurar entre os mais quentes da série histórica, somando-se à tendência de aquecimento de longo prazo.</p>
+
+    <h3>Impactos no Brasil por região</h3>
+    <p class="muted">Escolha uma região. São tendências observadas em episódios passados, não garantias: cada El Niño se comporta de um jeito.</p>
+    <div class="region" id="regions">
+      <div class="tabs" role="tablist" aria-label="Regiões do Brasil"></div>
+      <div class="region-body card"><h4 id="regTitle"></h4><p id="regText"></p></div>
+    </div>
+
+    <div class="callout"><strong>El Niño e eventos extremos.</strong> O fenômeno não cria um evento extremo sozinho, mas aumenta a probabilidade de alguns deles: a seca e os incêndios na Amazônia em 2015–2016 e em 2023, e as chuvas intensas no Sul do país. Em 2023–2024, um El Niño forte coincidiu com recordes de temperatura global e seca severa na Amazônia, reforçados pelo aquecimento de longo prazo.</div>
+  </div>
+</section>
+
+<!-- ============ CONSEQUÊNCIAS ============ -->
+<section class="section" id="consequencias">
+  <div class="wrap">
+    <h2>Consequências e impactos</h2>
+    <p class="intro">Abra cada tópico para ver como o aquecimento já aparece no mundo real.</p>
+    <div class="accordion">
+      <details><summary>Ondas de calor</summary><p>São períodos prolongados de temperaturas muito acima do normal. O IPCC conclui que, desde os anos 1950, ondas de calor ficaram mais frequentes e intensas na maior parte das regiões do planeta. Elas afetam a saúde, sobretudo de idosos e crianças, e a demanda de energia.</p></details>
+      <details><summary>Secas prolongadas</summary><p>O calor aumenta a evaporação e pode agravar a falta de chuva. A seca de 2023 na Amazônia deixou rios como o Negro e o Madeira em níveis muito baixos, isolou comunidades ribeirinhas e dificultou o transporte de alimentos e água.</p></details>
+      <details><summary>Chuvas intensas e enchentes</summary><p>Uma atmosfera mais quente retém mais vapor de água, o que favorece chuvas mais fortes. Em maio de 2024, as enchentes no Rio Grande do Sul foram uma das maiores catástrofes climáticas do país. Fatores climáticos e de ocupação do solo contribuíram.</p></details>
+      <details><summary>Derretimento de geleiras</summary><p>As geleiras e as calotas de gelo da Groenlândia e da Antártida perdem massa. Esse gelo, antes retido em terra, passa a alimentar o oceano e reduz a reserva de água doce de regiões que dependem do degelo, como áreas dos Andes.</p></details>
+      <details><summary>Elevação do nível do mar</summary><p>Dois fatores combinados: a água do mar se expande ao aquecer e o gelo continental derrete. O IPCC estima elevação média de cerca de 20 cm entre 1901 e 2018, com ritmo crescente nas últimas décadas. Cidades costeiras sofrem com erosão, inundações e salinização da água.</p></details>
+      <details><summary>Perda de biodiversidade</summary><p>O aquecimento muda habitats e o calendário da natureza. O branqueamento de corais, causado por ondas de calor marinhas, é um dos sinais mais visíveis. Episódios de El Niño já provocaram branqueamento em massa em recifes de vários oceanos.</p></details>
+      <details><summary>Produção de alimentos</summary><p>Calor extremo, secas e chuvas fora de época reduzem a produtividade e aumentam a variabilidade das safras. O IPCC alerta que os impactos tendem a crescer com o nível de aquecimento, afetando segurança alimentar e preços.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AJUDAR ============ -->
+<section class="section alt" id="ajudar">
+  <div class="wrap">
+    <h2>Como podemos ajudar?</h2>
+    <p class="intro">Mudanças individuais não substituem políticas públicas e ações das empresas, mas somam-se a elas e ajudam a criar uma cultura de responsabilidade ambiental.</p>
+    <div class="grid">
+      <article class="card"><h4>Consumo consciente</h4><p>Pergunte-se se precisa mesmo do item. Prefira produtos duráveis, consertáveis e de origem conhecida.</p></article>
+      <article class="card"><h4>Economia de água e energia</h4><p>Banhos mais curtos, torneira fechada ao escovar os dentes, lâmpadas LED e aparelhos desligados da tomada.</p></article>
+      <article class="card"><h4>Redução de resíduos</h4><p>Reduza, reutilize e só depois recicle. Evite descartáveis e desperdício de comida.</p></article>
+      <article class="card"><h4>Reciclagem</h4><p>Separe recicláveis secos, descarte pilhas e eletrônicos em pontos de coleta e, se possível, faça compostagem.</p></article>
+      <article class="card"><h4>Áreas verdes</h4><p>Apoie a preservação de matas, nascentes e parques; plante espécies nativas e evite produtos de desmatamento ilegal.</p></article>
+      <article class="card"><h4>Transporte sustentável</h4><p>Ande a pé, de bicicleta ou de transporte coletivo sempre que possível; combine caronas e viagens.</p></article>
+      <article class="card"><h4>Participação</h4><p>Engaje-se em mutirões, cooperativas, grêmios e conselhos locais; informe-se e cobre ações do poder público.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ATIVIDADES ============ -->
+<section class="section" id="atividades">
+  <div class="wrap">
+    <h2>Atividades interativas</h2>
+    <p class="intro">Três formas de testar o que você aprendeu. Use os botões de cada atividade para reiniciar quando quiser.</p>
+
+    <article class="activity" id="quiz">
+      <header><h3>Atividade 1 – Quiz ambiental</h3><span class="badge" id="quizCount"></span></header>
+      <div class="act-body" id="quizBody"></div>
+    </article>
+
+    <article class="activity" id="myth">
+      <header><h3>Atividade 2 – Mito ou verdade</h3><span class="badge" id="mythCount"></span></header>
+      <div class="act-body" id="mythBody"></div>
+    </article>
+
+    <article class="activity" id="challenge">
+      <header><h3>Atividade 3 – Teste seus conhecimentos</h3><span class="badge" id="chCount"></span></header>
+      <div class="act-body" id="chBody"></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ REFERÊNCIAS ============ -->
+<section class="section alt" id="referencias">
+  <div class="wrap">
+    <h2>Referências e fontes consultadas</h2>
+    <p class="intro">Os dados deste site foram baseados nas fontes abaixo. Para números atualizados, consulte sempre os links originais.</p>
+    <ul class="refs">
+      <li><a href="https://www.ipcc.ch/report/ar6/syr/" target="_blank" rel="noopener">IPCC – Sexto Relatório de Avaliação (AR6), Relatório Síntese</a></li>
+      <li><a href="https://wmo.int/publication-series/state-of-global-climate" target="_blank" rel="noopener">Organização Meteorológica Mundial (OMM) – Estado do Clima Global</a></li>
+      <li><a href="https://climate.nasa.gov/" target="_blank" rel="noopener">NASA – Climate Change: Vital Signs of the Planet</a></li>
+      <li><a href="https://www.climate.gov/enso" target="_blank" rel="noopener">NOAA – Climate.gov: ENSO (El Niño e La Niña)</a></li>
+      <li><a href="https://gml.noaa.gov/ccgg/trends/" target="_blank" rel="noopener">NOAA – Trends in Atmospheric Carbon Dioxide</a></li>
+      <li><a href="https://enos.cptec.inpe.br/" target="_blank" rel="noopener">INPE/CPTEC – El Niño e La Niña</a></li>
+      <li><a href="https://www.gov.br/mma/pt-br" target="_blank" rel="noopener">Ministério do Meio Ambiente e Mudança do Clima</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap"><p>Clima em Foco · Projeto de extensão. Criado por Yan Oliveira Reis</p></div></footer>
+<button class="totop" id="totop" aria-label="Voltar ao topo">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
